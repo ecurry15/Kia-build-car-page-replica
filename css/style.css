@@ -43,6 +43,11 @@ body {
   letter-spacing: .2px;
   cursor: pointer;
 }
+.header__nav-item:hover p {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .nav-text-and-icon {
   display: flex;
   align-items: center;
@@ -66,10 +71,12 @@ body {
   align-items: center;
 }
 .header__location > i {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: .9rem;
 }
 .header__find-dealer-section > p {
   text-decoration: underline;
+  cursor: pointer;
 }
 .header__search-section {
   display: flex;
