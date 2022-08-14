@@ -5,3 +5,85 @@
   --kia-light-grey-background: #e7e7e7;
   --kia-green-color: #01a59a;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--kia-dark-background);
+  width: 100%;
+  height: 67px;
+}
+.header__kia-logo-container {
+  width: 69px;
+  margin-left: 89px;
+}
+.header__kia-logo {
+  fill: var(--kia-white-text);
+}
+.header__nav {
+  display: flex;
+  gap: 29px;
+  margin-left: 67px;
+}
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  color: var(--kia-white-text);
+  list-style: none;
+  font-weight: 600;
+  font-size: .87rem;
+  letter-spacing: .2px;
+  cursor: pointer;
+}
+.nav-text-and-icon {
+  display: flex;
+  align-items: center;
+}
+.nav-text-and-icon > i {
+  font-size: 1.2rem;
+  padding-left: 12px;
+}
+.header__find-dealer-section {
+  display: flex;
+  align-items: center;
+  color: var(--kia-white-text);
+  font-size: .75rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 110px;
+}
+.header__location {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+.header__location > i {
+  margin-right: 5px;
+}
+.header__find-dealer-section > p {
+  text-decoration: underline;
+}
+.header__search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 67px;
+  width: 180px;
+  color: var(--kia-white-text);
+  font-size: .83rem;
+  font-weight: 600;
+  letter-spacing: .1px;
+  background-color: var(--kia-grey-color);
+}
+.header__search-section > i{
+margin-right: 13px;
+font-size: 1.1rem;
+}
