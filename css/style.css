@@ -317,3 +317,28 @@ align-items: center;
   margin-right: 20px;
   cursor: pointer;
 }
+.right__vehicle-nearby-section {
+  width: 94%;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-color: var(--kia-white-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right__vehicle-nearby-button {
+  font-size: .96rem;
+  font-weight: 600;
+  color: var(--kia-dark-background);
+  letter-spacing: .5px;
+  border: 2px solid var(--kia-dark-background);
+  padding: 18px 105px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right__vehicle-nearby-button:hover {
+ color: var(--kia-white-text);
+ background-color: var(--kia-dark-background);
+}
