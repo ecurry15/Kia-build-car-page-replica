@@ -90,6 +90,7 @@ body {
   background-color: var(--kia-grey-color);
   right: 0;
   transition: all 3ms;
+  cursor: text;
 }
 .header__search-section-input {
   background: none;
@@ -131,7 +132,9 @@ top: 26px;
 #header__search-section-open > input {
   margin-right: auto;
   margin-left: 20px;
-  font-size: .89rem;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--kia-dark-background);
 }
 #header__search-section-open > input::placeholder {
 color: var(--kia-grey-color);
@@ -158,4 +161,26 @@ color: var(--kia-grey-color);
   color: var(--kia-white-text);
   background-color: var(--kia-grey-color);
   cursor: pointer;
+}
+.header__search-dropDown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  background-color: var(--kia-white-text);
+  right: 0;
+  top: 67px;
+  box-shadow: -2px 3px 5px rgb(180, 180, 180);
+  overflow: scroll;
+}
+.search-dropDown-item {
+  text-decoration: none;
+  color: var(--kia-dark-background);
+  font-size: .87rem;
+  font-weight: 600;
+  letter-spacing: .4px;
+  padding: 10px 0 10px 20px;
+}
+.search-dropDown-item:hover {
+background-color: var(--kia-light-grey-background);
 }
