@@ -194,15 +194,6 @@ background-color: var(--kia-light-grey-background);
  display: none;
   
 }
-
-
-
-
-
-
-
-
-
 /* Search bar Animations -----   */
 @keyframes searchBarOpen {
   from {width: 180px;}

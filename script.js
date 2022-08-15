@@ -19,6 +19,8 @@ const closeSearchDropDown = () => {
   headerSearchIcon.removeAttribute('id');
   headerSearchDropDown.id = "header__search-dropDown-closed";
 headerSearchSection.style.animation = "searchBarClose .4s";
+
+/* Timeout so dealer section movement isn't visible */
   setTimeout(displayDealerSection, 100);
 function displayDealerSection() {
   headerFindDealerSection.style.display = "flex";
