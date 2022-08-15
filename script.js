@@ -10,6 +10,7 @@ headerSearchSection.id = "header__search-section-open";
 headerSearchXIcon.id = "header__search-open-x-icon";
 headerSearchIcon.id = "header__search-open-icon";
 headerSearchDropDown.removeAttribute('id');
+headerSearchSection.style.animation = "searchBarOpen .4s";
 }
 
 const closeSearchDropDown = () => {
@@ -17,7 +18,7 @@ const closeSearchDropDown = () => {
   headerSearchXIcon.removeAttribute('id');
   headerSearchIcon.removeAttribute('id');
   headerSearchDropDown.id = "header__search-dropDown-closed";
-
+headerSearchSection.style.animation = "searchBarClose .4s";
   setTimeout(displayDealerSection, 100);
 function displayDealerSection() {
   headerFindDealerSection.style.display = "flex";
