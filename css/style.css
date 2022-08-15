@@ -16,6 +16,7 @@ body {
 
 .header {
   display: flex;
+  position: fixed;
   align-items: center;
   background-color: var(--kia-dark-background);
   width: 100%;
@@ -80,17 +81,81 @@ body {
 }
 .header__search-section {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   height: 67px;
   width: 180px;
   color: var(--kia-white-text);
-  font-size: .83rem;
+  background-color: var(--kia-grey-color);
+  right: 0;
+  transition: all 3ms;
+}
+.header__search-section-input {
+  background: none;
+  border: none;
+  margin-left: 70px;
+  width: 60%;
+  outline: none;
+  transition: all 3ms;
+}
+.header__search-section-input::placeholder {
+  color: var(--kia-white-text);
+  font-size: .89rem;
   font-weight: 600;
   letter-spacing: .1px;
-  background-color: var(--kia-grey-color);
 }
-.header__search-section > i{
-margin-right: 13px;
+.header__search-x-icon {
+  display: none;
+  font-size: 0px;
+}
+.header__search-icon > i{
+  position: absolute;
 font-size: 1.1rem;
+color: var(--kia-white-text);
+left: 45px;
+top: 26px;
+}
+#header__search-section-open {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  position: relative;
+  width: 550px;
+  background-color: var(--kia-white-text);
+  color: var(--kia-dark-background);
+  margin-right: 0;
+  transition: all 3ms;
+  border-bottom: 4px solid hsl(0, 0%, 96%);
+}
+#header__search-section-open > input {
+  margin-right: auto;
+  margin-left: 20px;
+  font-size: .89rem;
+}
+#header__search-section-open > input::placeholder {
+color: var(--kia-grey-color);
+}
+#header__search-open-x-icon {
+  display: block;
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--kia-grey-color);
+  right: 93px;
+  cursor: pointer;
+}
+#header__search-open-icon > i {
+  position: absolute;
+  display: flex;
+  height: 67px;
+  width: 67px;
+  left: auto;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--kia-white-text);
+  background-color: var(--kia-grey-color);
+  cursor: pointer;
 }
