@@ -23,6 +23,7 @@ body {
   background-color: var(--kia-dark-background);
   width: 100%;
   height: 67px;
+  top: 0;
 }
 .header__kia-logo-container {
   width: 69px;
@@ -178,6 +179,7 @@ color: var(--kia-grey-color);
   box-shadow: -2px 3px 5px rgb(180, 180, 180);
   overflow: scroll;
   animation: var(--search-bar-open-annimation);
+  z-index: 100;
 }
 .search-dropDown-item {
   text-decoration: none;
@@ -203,4 +205,70 @@ background-color: var(--kia-light-grey-background);
   from {width: 550px;}
   to {width: 180px;}
 }
-/* Search bar Animations -----   */
+/* Search bar Animations End-----   */
+
+.main-content {
+  display: flex;
+  margin-top: 67px;
+  height: 100%;
+width: 100%;
+}
+.main-content__left {
+  width: 77.9%;
+}
+.main-content__right {
+  width: 22.1%;
+}
+.right__top-section {
+  width: 100%;
+  height: 86px;
+  background-color: var(--kia-dark-background);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.right__clipBoard-icon {
+  color: var(--kia-dark-background);
+  background-image: radial-gradient(at center, var(--kia-white-text) 40%, transparent 40%);
+  font-size: 1.85rem;
+  margin-left: 22px;
+}
+.fa-clipboard-check  {
+  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+}
+.right__build-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: var(--kia-white-text);
+  margin-left: 30px;
+}
+.right__build-title {
+  font-size: 1rem;
+  letter-spacing: .2px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.right__build-prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.right__build-prices p {
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: .3px;
+}
+.right__build-prices span {
+  font-weight: 400;
+  font-size: .9rem;
+  padding-left: 7px;
+  letter-spacing: -.5px;
+}
+.right__down-angle {
+  color: var(--kia-white-text);
+  font-size: 1.4rem;
+  margin-left: auto;
+  margin-right: 22px;
+}
