@@ -3,6 +3,7 @@
   --kia-white-text: #ffffff;
   --kia-grey-color: #323a43;
   --kia-light-grey-background: #e7e7e7;
+  --kia-underline: #c2c2c2;
   --kia-right-light-grey-background: #f1f1f1;
   --kia-green-color: #01a59a;
   --search-bar-open-annimation: searchBarOpen .4s;
@@ -275,7 +276,6 @@ width: 100%;
 }
 .right__main-section {
   width: 100%;
-  height: 100%;
   background-color: var(--kia-right-light-grey-background);
 }
 .right__paymentAndShare {
@@ -341,4 +341,52 @@ align-items: center;
 .right__vehicle-nearby-button:hover {
  color: var(--kia-white-text);
  background-color: var(--kia-dark-background);
+}
+.right__main-finish-build {
+  width: 94%;
+  height: 618px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  background-color: var(--kia-white-text);
+  display: flex;
+  flex-direction: column;
+}
+.finish-build-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-top: 23px;
+  margin-left: 21px;
+  margin-right: 20px;
+  padding-bottom: 22px;
+  border-bottom: solid .5px var(--kia-underline);
+
+}
+.finish-build-item__down-angle {
+  font-size: 1.15rem;
+  color: var(--kia-dark-background);
+  margin-left: auto;
+}
+.finish-build-button {
+  margin-top: auto;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 19.5px 0px;
+  width: 91%;
+  text-align: center;
+  font-size: .96rem;
+  font-weight: 600;
+  color: var(--kia-dark-background);
+  letter-spacing: .5px;
+  border: 2px solid var(--kia-dark-background);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.finish-build-button:hover {
+  color: var(--kia-white-text);
+  background-color: var(--kia-dark-background);
 }
