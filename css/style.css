@@ -3,6 +3,7 @@
   --kia-white-text: #ffffff;
   --kia-grey-color: #323a43;
   --kia-light-grey-background: #e7e7e7;
+  --kia-right-light-grey-background: #f1f1f1;
   --kia-green-color: #01a59a;
   --search-bar-open-annimation: searchBarOpen .4s;
   --search-bar-close-annimation: searchBarClose .4s;
@@ -271,4 +272,48 @@ width: 100%;
   font-size: 1.4rem;
   margin-left: auto;
   margin-right: 22px;
+}
+.right__main-section {
+  width: 100%;
+  height: 100%;
+  background-color: var(--kia-right-light-grey-background);
+}
+.right__paymentAndShare {
+padding-top: 22px;
+display: flex;
+align-items: center;
+}
+.right__paymentAndShare p {
+  cursor: pointer;
+}
+.right__paymentAndShare p:hover {
+  text-decoration: underline;
+}
+.paymentAndShare__payment {
+  display: flex;
+  align-items: center;
+  color: var(--kia-dark-background);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 30px;
+  letter-spacing: .1px;
+  border-right: 3.2px solid rgb(184, 184, 184);
+  padding-right: 36px;
+}
+.fa-calculator {
+  font-size: 1.7rem;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.paymentAndShare__share {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+.right__share-svg {
+  width: 22px;
+  height: 22px;
+  color: var(--kia-dark-background);
+  margin-right: 20px;
+  cursor: pointer;
 }
