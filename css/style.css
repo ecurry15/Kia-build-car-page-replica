@@ -64,7 +64,8 @@ body {
   font-size: .75rem;
   font-weight: 500;
   margin-left: auto;
-  margin-right: 110px;
+  margin-right: 290px;
+  transition: all 3ms;
 }
 .header__location {
   margin-right: 50px;
@@ -81,14 +82,14 @@ body {
 }
 .header__search-section {
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: center;
   height: 67px;
   width: 180px;
   color: var(--kia-white-text);
   background-color: var(--kia-grey-color);
-  right: 0;
+  right: 0px;
   transition: all 3ms;
   cursor: text;
 }
@@ -126,6 +127,7 @@ top: 26px;
   background-color: var(--kia-white-text);
   color: var(--kia-dark-background);
   margin-right: 0;
+  right: 0px;
   margin-left: auto;
   transition: all 3ms;
   border-bottom: 4px solid hsl(0, 0%, 96%);
@@ -188,3 +190,4 @@ background-color: var(--kia-light-grey-background);
 #header__search-dropDown-closed {
   display: none;
 }
+
