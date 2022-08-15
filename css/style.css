@@ -126,6 +126,7 @@ top: 26px;
   background-color: var(--kia-white-text);
   color: var(--kia-dark-background);
   margin-right: 0;
+  margin-left: auto;
   transition: all 3ms;
   border-bottom: 4px solid hsl(0, 0%, 96%);
 }
@@ -183,4 +184,7 @@ color: var(--kia-grey-color);
 }
 .search-dropDown-item:hover {
 background-color: var(--kia-light-grey-background);
+}
+#header__search-dropDown-closed {
+  display: none;
 }
