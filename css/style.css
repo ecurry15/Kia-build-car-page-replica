@@ -252,11 +252,15 @@ background-color: var(--kia-light-grey-background);
     position: relative;
 }
 .car-container__car-section {
-  grid-row: 2 / span 3;
+  grid-row: 1 / span 3;
   object-fit: contain;
+  display: flex;
+  justify-content: center;
+  cursor: ew-resize;
 }
 .car-section__img {
-  height: inherit;
+  max-height: calc(58vh - 160px);
+  max-width: 100%;
 }
 .threeSixty {
   grid-row: 3;
@@ -471,8 +475,7 @@ justify-content: space-between;
   position: relative;
 }
 
-#right__main-finish-build-open {
-}
+
 .finish-build-item {
   display: flex;
   align-items: center;
