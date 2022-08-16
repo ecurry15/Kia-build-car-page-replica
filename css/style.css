@@ -217,10 +217,11 @@ background-color: var(--kia-light-grey-background);
 width: 100%;
 }
 .main-content__left {
-  width: 77.9%;
+
 }
 .main-content__right {
-  width: 22.1%;
+  margin-left: auto;
+  width: clamp(475px, 27%, 27%);
 }
 .right__top-section {
   width: 100%;
@@ -282,9 +283,18 @@ width: 100%;
   background-color: var(--kia-right-light-grey-background);
 }
 .right__paymentAndShare {
-padding-top: 22px;
+padding-top: 25px;
 display: flex;
 align-items: center;
+width: 94%;
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+}
+.divider {
+  width: 2.5px;
+  height: 27px;
+  background-color: var(--kia-underline);
 }
 .right__paymentAndShare p {
   cursor: pointer;
@@ -298,27 +308,25 @@ align-items: center;
   color: var(--kia-dark-background);
   font-weight: 500;
   font-size: 1rem;
-  margin-left: 30px;
   letter-spacing: .1px;
-  border-right: 3.2px solid rgb(184, 184, 184);
-  padding-right: 36px;
+  margin-left: 35px;
 }
 .fa-calculator {
   font-size: 1.7rem;
-  margin-right: 15px;
   cursor: pointer;
+  margin-right: 15px;
 }
 .paymentAndShare__share {
   display: flex;
   align-items: center;
-  margin-left: 35px;
+  margin-right: 35px;
 }
 .right__share-svg {
   width: 22px;
   height: 22px;
   color: var(--kia-dark-background);
-  margin-right: 20px;
   cursor: pointer;
+  margin-right: 15px;
 }
 .right__vehicle-nearby-section {
   width: 94%;
@@ -354,12 +362,16 @@ align-items: center;
   margin-bottom: 10px;
 }
 .right__vehicle-nearby-button {
-  font-size: .96rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   color: var(--kia-dark-background);
   letter-spacing: .5px;
   border: 2px solid var(--kia-dark-background);
-  padding: 18px 105px;
+  width: 92%;
+  padding: 21px 0;
   margin: 16px 0;
   cursor: pointer;
   transition: 0.3s;
