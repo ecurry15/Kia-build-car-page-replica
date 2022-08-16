@@ -42,6 +42,3 @@ if (searchDropDownOpen) {
 }
 })
 
-/* header - header__search-section-open
-x-icon - header__search-open-x-icon
-search-icon - header__search-open-icon */

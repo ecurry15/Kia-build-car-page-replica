@@ -319,14 +319,34 @@ align-items: center;
 }
 .right__vehicle-nearby-section {
   width: 94%;
-  height: 85px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
   background-color: var(--kia-white-text);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+#right__vehicle-nearby-section-expanded {
+  padding-top: 0px;
+}
+.right__features-item {
+  display: flex;
+  align-items: center;
+  width: 91%;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 22px;
+  font-size: .9rem;
+  letter-spacing: -.3px;
+  color: var(--kia-dark-background);
+}
+#right__features-item-closed {
+  display: none;
+}
+.right__features-item:nth-child(4) {
+  margin-bottom: 10px;
 }
 .right__vehicle-nearby-button {
   font-size: .96rem;
@@ -335,6 +355,7 @@ align-items: center;
   letter-spacing: .5px;
   border: 2px solid var(--kia-dark-background);
   padding: 18px 105px;
+  margin: 16px 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -342,15 +363,36 @@ align-items: center;
  color: var(--kia-white-text);
  background-color: var(--kia-dark-background);
 }
+.right__contact-dealer-btn {
+  font-size: .96rem;
+  font-weight: 600;
+  color: var(--kia-dark-background);
+  letter-spacing: .5px;
+  border: 2px solid var(--kia-dark-background);
+  padding: 18px 141px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.right__contact-dealer-btn:hover {
+  color: var(--kia-white-text);
+ background-color: var(--kia-dark-background);
+}
+#right__contact-dealer-btn-closed {
+  display: none;
+}
 .right__main-finish-build {
   width: 94%;
-  height: 618px;
+  height: 617px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
   background-color: var(--kia-white-text);
   display: flex;
   flex-direction: column;
+}
+#right__main-finish-build-open {
+ height: 381px;
 }
 .finish-build-item {
   display: flex;
