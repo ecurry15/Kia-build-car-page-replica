@@ -172,17 +172,17 @@ color: var(--kia-grey-color);
   cursor: pointer;
 }
 .header__search-dropDown {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 550px;
   background-color: var(--kia-white-text);
   right: 0;
   top: 67px;
-  box-shadow: -2px 3px 5px rgb(180, 180, 180);
+  box-shadow: 0px 4px 10px rgb(114, 114, 114);
   overflow: scroll;
   animation: var(--search-bar-open-annimation);
-  z-index: 100;
+  z-index: 5000;
 }
 .search-dropDown-item {
   text-decoration: none;
@@ -248,6 +248,8 @@ background-color: var(--kia-light-grey-background);
   width: clamp(475px, 27%, 27%);
   background-color: var(--kia-right-light-grey-background);
   overflow-y: scroll;
+  position: relative;
+  z-index: -1;
 }
 
 .right__top-section {
@@ -258,6 +260,7 @@ background-color: var(--kia-light-grey-background);
   align-items: center;
   cursor: pointer;
   position: fixed;
+  z-index: 1;
 }
 .right__clipBoard-icon {
   color: var(--kia-dark-background);
