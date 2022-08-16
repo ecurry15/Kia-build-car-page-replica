@@ -27,6 +27,7 @@ body {
   width: 100%;
   height: 67px;
   top: 0;
+  z-index: 10;
 }
 .header__kia-logo-container {
   width: 69px;
@@ -261,6 +262,7 @@ background-color: var(--kia-light-grey-background);
 .car-section__img {
   max-height: calc(58vh - 160px);
   max-width: 100%;
+  -webkit-user-drag: none;
 }
 .threeSixty {
   grid-row: 3;
@@ -278,7 +280,7 @@ background-color: var(--kia-light-grey-background);
   background-color: var(--kia-right-light-grey-background);
   overflow-y: scroll;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .right__top-section {
