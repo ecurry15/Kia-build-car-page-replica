@@ -16,6 +16,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 }
 
 .header {
@@ -216,19 +217,33 @@ background-color: var(--kia-light-grey-background);
 width: 100%;
 }
 .main-content__left {
+width: 73vw;
+background-color: var(--kia-light-grey-background);
 }
+.left__header {
+  width: 100%;
+  height: 88px;
+  background-color: var(--kia-white-text);
+}
+
+
+
+
 .main-content__right {
   margin-left: auto;
   width: clamp(475px, 27%, 27%);
   background-color: var(--kia-right-light-grey-background);
+  overflow-y: scroll;
 }
+
 .right__top-section {
-  width: 100%;
+  width: inherit;
   height: 86px;
   background-color: var(--kia-dark-background);
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: fixed;
 }
 .right__clipBoard-icon {
   color: var(--kia-dark-background);
@@ -273,12 +288,13 @@ width: 100%;
   color: var(--kia-white-text);
   font-size: 1.4rem;
   margin-left: auto;
-  margin-right: 22px;
+  margin-right: 1.2vw;
   transition: 0.4s;
 }
 
 .right__main-section {
   width: 100%;
+  margin-top: 86px;
   background-color: var(--kia-right-light-grey-background);
 }
 .right__paymentAndShare {
