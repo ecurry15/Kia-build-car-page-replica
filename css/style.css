@@ -241,6 +241,31 @@ background-color: var(--kia-light-grey-background);
   font-size: 1rem;
   margin-right: 22px;
 }
+.left__car-container {
+  width: 100%;
+  height: 372px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-image: url("https://s7d2.scene7.com/is/image/kiamotors/Sedans_BnP_Asset-2x:XXL");
+  background-repeat: no-repeat;
+    background-size: 100% 300px;
+    position: relative;
+}
+.car-container__car-section {
+  grid-row: 2 / span 3;
+  object-fit: contain;
+}
+.car-section__img {
+  height: inherit;
+}
+.threeSixty {
+  grid-row: 3;
+  width: 55%;
+  font-weight: 600;
+  position: absolute;
+  justify-self: center;
+  bottom: 0;
+}
 
 
 .main-content__right {
