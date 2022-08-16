@@ -4,6 +4,12 @@ const headerSearchXIcon = document.querySelector('.header__search-x-icon');
 const headerSearchIcon = document.querySelector('.header__search-icon');
 const headerSearchDropDown = document.querySelector('.header__search-dropDown');
 let searchDropDownOpen = false;
+const rightDownAngle = document.querySelector('.right__down-angle');
+const rightVehicleNearbySection = document.querySelector('.right__vehicle-nearby-section');
+const rightFeaturesItem = document.querySelectorAll('.right__features-item');
+const rightContactDealerBtn = document.querySelector('.right__contact-dealer-btn');
+const rightMainFinishBuild = document.querySelector('.right__main-finish-build');
+let downAngleClicked = false;
 
 const openSearchDropDown = () => {
 headerFindDealerSection.style.display = "none";
@@ -42,3 +48,34 @@ if (searchDropDownOpen) {
 }
 })
 
+const expandBuildSection = () => {
+  rightVehicleNearbySection.id = "right__vehicle-nearby-section-expanded";
+  rightFeaturesItem.forEach(item => item.removeAttribute('id'))
+  rightContactDealerBtn.removeAttribute('id');
+  rightMainFinishBuild.id = "right__main-finish-build-open";
+}
+
+const closeBuildSection = () => {
+  rightVehicleNearbySection.removeAttribute('id');
+  rightFeaturesItem.forEach(item => item.id = "right__features-item-closed");
+  rightContactDealerBtn.id = "right__contact-dealer-btn-closed";
+  rightMainFinishBuild.removeAttribute('id');
+}
+
+rightDownAngle.addEventListener('click', function() {
+  if (!downAngleClicked) {
+    rightDownAngle.style.transform = "rotate(180deg)";
+    downAngleClicked = true;
+    expandBuildSection();
+  } else {
+    rightDownAngle.style.transform = "rotate(0deg)";
+    downAngleClicked = false;
+    closeBuildSection();
+  }
+})
+
+/* id- right__vehicle-nearby-section-expanded 
+    id-   right__features-item-closed
+    id -      right__contact-dealer-btn-closed
+    id -    right__main-finish-build-open
+*/
