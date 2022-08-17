@@ -84,11 +84,9 @@ rightDownAngle.addEventListener('click', function() {
 
 carContainer.addEventListener('mousedown', function() {
   mouseDownOnImg = true;
-  console.log(mouseDownOnImg);
 })
 window.addEventListener('mouseup', function() {
   mouseDownOnImg = false;
-  console.log(mouseDownOnImg);
 })
 window.addEventListener('mouseleave', function() {
   mouseDownOnImg = false;
@@ -120,7 +118,6 @@ carContainer.addEventListener('mousemove', function(e) {
  if (mouseDownOnImg) {
 if(initialXPosition < e.pageX) {
   dragPosition = 'right';
-  console.log(dragPosition);
   initialXPosition = e.pageX;
 } else {
   dragPosition = 'left';
