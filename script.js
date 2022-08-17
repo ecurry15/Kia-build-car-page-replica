@@ -12,8 +12,12 @@ const rightMainFinishBuild = document.querySelector('.right__main-finish-build')
 let downAngleClicked = false;
 const carContainer = document.querySelector('.car-container__car-section');
 const carSectionImg = document.querySelector('.car-section__img');
+//SetUp for car 360 rotation ----
 let initialXPosition = 0;
 let mouseDownOnImg = false;
+let currentImg = 1;
+let dragPosition = '';
+
 
 const openSearchDropDown = () => {
 headerFindDealerSection.style.display = "none";
@@ -90,14 +94,38 @@ window.addEventListener('mouseleave', function() {
   mouseDownOnImg = false;
 })
 
+const changeCarImg = () => {
+  if(dragPosition == 'left') {
+    if(currentImg < 36) { 
+      currentImg++;
+    } else if (currentImg == 36) {
+      currentImg = 1;
+    }
+
+  } else if (dragPosition == 'right') {
+    if (currentImg > 1) {
+      currentImg--;
+    } else if (currentImg == 1) {
+      currentImg = 36;
+    }
+  }
+  if(currentImg < 10) {
+carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/lxs-fwd/exterior/0c0c0c/360/${"0" + currentImg}.png/jcr:content/renditions/desktop.png`
+  } else {
+    carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/lxs-fwd/exterior/0c0c0c/360/${currentImg}.png/jcr:content/renditions/desktop.png`
+  }
+}
+
 carContainer.addEventListener('mousemove', function(e) {
  if (mouseDownOnImg) {
 if(initialXPosition < e.pageX) {
-  console.log('drag right');
+  dragPosition = 'right';
+  console.log(dragPosition);
   initialXPosition = e.pageX;
 } else {
-  console.log('drag left');
+  dragPosition = 'left';
   initialXPosition = e.pageX;
 }
+changeCarImg();
  }
 })
