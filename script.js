@@ -82,13 +82,13 @@ rightDownAngle.addEventListener('click', function() {
   }
 })
 
-carContainer.addEventListener('mousedown', function() {
+carContainer.addEventListener('pointerdown', function() {
   mouseDownOnImg = true;
 })
-window.addEventListener('mouseup', function() {
+window.addEventListener('pointerup', function() {
   mouseDownOnImg = false;
 })
-window.addEventListener('mouseleave', function() {
+window.addEventListener('pointerleave', function() {
   mouseDownOnImg = false;
 })
 
