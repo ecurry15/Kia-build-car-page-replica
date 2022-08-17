@@ -381,7 +381,48 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
 }
+.paint__description {
+  position: absolute;
+  background-color: var(--kia-dark-background);
+  color: var(--kia-white-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+.paint__description span {
+  color: var(--kia-underline);
+  margin-top: 10px;
+}
+#description__color-only {
+bottom: -30px;
+right: -90px;
+z-index: 20;
+height: 30px;
+padding: 0 6px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: .9rem;
+border: 1px solid var(--kia-white-text);
+display: none;
+}
 
+#description__displayNone {
+  display: none;
+  height: 90px;
+  padding: 0 15px;
+  top: -100px;
+  justify-content: center;
+}
+
+.paint__circle:hover #description__color-only {
+  display: flex;
+}
+.paint__circle:hover #description__displayNone {
+  display: flex;
+}
 
 
 .main-content__right {
