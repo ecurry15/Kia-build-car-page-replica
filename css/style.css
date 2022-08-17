@@ -316,7 +316,71 @@ cursor: pointer;
   color: var(--kia-dark-background);
   text-decoration: underline;
 }
-
+.styling__paint-and-seat {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--kia-dark-background);
+  justify-content: space-between;
+  margin-right: 120px;
+}
+.styling__paint-and-seat span {
+  font-weight: 600;
+}
+.styling__colors {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.styling-colors__paint {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.paint__circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 2.23px solid rgb(135, 141, 156);
+  cursor: pointer;
+  position: relative;
+}
+#paint__black {
+  background: linear-gradient(rgba(12, 12, 12, 0.7), rgb(12, 12, 12));
+}
+#paint__silver {
+  background: linear-gradient(rgba(135, 141, 156, 0.7), rgb(135, 141, 156));
+}
+#paint__pearl {
+  background: linear-gradient(rgba(227, 231, 238, 0.7), rgb(219, 223, 230));
+}
+#paint__wolf-gray {
+  background: linear-gradient(rgba(173, 180, 192, 0.7), rgb(173, 180, 192));
+}
+#paint__gravity-gray {
+  background: linear-gradient(rgba(86, 94, 107, 0.7), rgb(86, 94, 107));
+}
+#paint__red {
+  background: linear-gradient(rgba(158, 33, 43, 0.7), rgb(158, 33, 43));
+}
+#paint__blue {
+  background: linear-gradient(rgba(40, 62, 171, 0.7), rgb(40, 62, 171));
+}
+.paint__price-availability {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid var(--kia-white-text);
+  background-color: var(--kia-dark-background);
+  bottom: -10px;
+  right: -10px;
+  color: var(--kia-white-text);
+  font-size: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
