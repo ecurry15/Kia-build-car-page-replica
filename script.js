@@ -10,6 +10,10 @@ const rightFeaturesItem = document.querySelectorAll('.right__features-item');
 const rightContactDealerBtn = document.querySelector('.right__contact-dealer-btn');
 const rightMainFinishBuild = document.querySelector('.right__main-finish-build');
 let downAngleClicked = false;
+const carContainer = document.querySelector('.car-container__car-section');
+const carSectionImg = document.querySelector('.car-section__img');
+let initialXPosition = 0;
+let mouseDownOnImg = false;
 
 const openSearchDropDown = () => {
 headerFindDealerSection.style.display = "none";
@@ -74,8 +78,26 @@ rightDownAngle.addEventListener('click', function() {
   }
 })
 
-/* id- right__vehicle-nearby-section-expanded 
-    id-   right__features-item-closed
-    id -      right__contact-dealer-btn-closed
-    id -    right__main-finish-build-open
-*/
+carContainer.addEventListener('mousedown', function() {
+  mouseDownOnImg = true;
+  console.log(mouseDownOnImg);
+})
+window.addEventListener('mouseup', function() {
+  mouseDownOnImg = false;
+  console.log(mouseDownOnImg);
+})
+window.addEventListener('mouseleave', function() {
+  mouseDownOnImg = false;
+})
+
+carContainer.addEventListener('mousemove', function(e) {
+ if (mouseDownOnImg) {
+if(initialXPosition < e.pageX) {
+  console.log('drag right');
+  initialXPosition = e.pageX;
+} else {
+  console.log('drag left');
+  initialXPosition = e.pageX;
+}
+ }
+})
