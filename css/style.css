@@ -485,7 +485,7 @@ display: none;
 .trims__label {
   display: flex;
   align-items: center;
-  color: var(--kia-dark-background)
+  color: var(--kia-dark-background);
 }
 .trims__label > h2 {
   font-size: 1.6rem;
@@ -510,10 +510,33 @@ display: none;
 .trims__label > span {
   font-size: 1.2rem;
 }
-
-
-
-
+.trim__carousel {
+  width: 98%;
+  height: 107px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+}
+.carousel__item {
+  height: 100%;
+  width: 220px;
+  background-color: var(--kia-white-text);
+  flex: 1 0 auto;
+  cursor: pointer;
+}
+#carousel__item-inactive {
+  opacity: .5;
+  transition: 0.3s;
+}
+#carousel__item-inactive:hover {
+  opacity: 1;
+}
+#carousel__item-active {
+  background-color: var(--kia-dark-background);
+}
 
 
 
