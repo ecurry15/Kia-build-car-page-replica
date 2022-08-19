@@ -478,6 +478,39 @@ display: none;
 .seat-color__circle:hover #description__displayNone {
   display: flex;
 }
+.styling__trims-container {
+  width: 100%;
+  margin-top: 35px;
+}
+.trims__label {
+  display: flex;
+  align-items: center;
+  color: var(--kia-dark-background)
+}
+.trims__label > h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .8px;
+  margin-right: 20px;
+}
+.trims__divider {
+  color: var(--kia-underline);
+  margin-right: 20px;
+  height: 25px;
+  width: 2px;
+  background-color: var(--kia-underline);
+}
+.trims__label > i {
+  padding-right: 10px;
+  color: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--kia-dark-background);
+   align-self: center;
+}
+.trims__label > span {
+  font-size: 1.2rem;
+}
+
 
 
 
