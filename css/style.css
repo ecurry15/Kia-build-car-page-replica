@@ -511,21 +511,28 @@ display: none;
   font-size: 1.2rem;
 }
 .trim__carousel {
-  width: 98%;
-  height: 107px;
-  margin-top: 30px;
+  width: 98.5%;
+  height: 135px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: nowrap;
   gap: 12px;
+  margin-top: 5px;
+  position: relative;
   overflow-x: auto;
 }
 .carousel__item {
-  height: 100%;
-  width: 220px;
+  height: 82%;
+  width: 223px;
   background-color: var(--kia-white-text);
   flex: 1 0 auto;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--kia-dark-background);
+  position: relative;
 }
 #carousel__item-inactive {
   opacity: .5;
@@ -536,8 +543,44 @@ display: none;
 }
 #carousel__item-active {
   background-color: var(--kia-dark-background);
+  color: white;
 }
-
+#carousel__item-active span {
+  color: var(--kia-underline);
+}
+.carousel__item h2 {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.carousel__item p {
+  display: flex;
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
+}
+.carousel__item span {
+  font-weight: 500;
+  color: var(--kia-grey-text);
+  margin-left: 5px;
+  font-size: .95rem;
+  letter-spacing: 0px;
+}
+.carsousel__selected-item-check {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background-color: var(--kia-green-color);
+  top: -20px;
+  right: 12px;
+}
 
 
 .main-content__right {
