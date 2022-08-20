@@ -828,6 +828,8 @@ justify-content: space-between;
 }
 
 
+/* @ Media -------------------------------      */
+
 
 @media (max-height:800px) {
   .left__car-container {
@@ -841,8 +843,6 @@ justify-content: space-between;
       position: relative;
   }
 }
-
-
 @media (max-width:1700px) {
   .header {
     height: 60px;
@@ -1017,4 +1017,68 @@ justify-content: space-between;
     font-size: .9rem;
     border: 1px solid var(--kia-dark-background);
   }
+}
+@media (max-width:1440px) {
+  .header__kia-logo-container {
+    width: 60px;
+    margin-left: 25px;
+  }
+  .header__nav {
+    gap: 26px;
+    margin-left: 30px;
+  }
+  .header__find-dealer-section {
+    margin-right: 165px;
+    font-size: .66rem;
+  }
+  .header__location {
+    margin-right: 10px;
+  }
+  .header__search-section {
+    width: 150px;
+  }
+  .header__search-section-input {
+    margin-left: 60px;
+  }
+  .header__search-icon > i{
+  left: 30px;
+  }
+  #header__search-section-open {
+    width: 360px;
+  }
+  #header__search-open-x-icon {
+    font-size: 1.3rem;
+  }
+  #header__search-open-icon > i {
+    height: 60px;
+    width: 60px;
+  }
+  .header__search-dropDown {
+    width: 360px;
+  }
+  .search-dropDown-item {
+    text-decoration: none;
+    color: var(--kia-dark-background);
+    font-size: .87rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    padding: 10px 0 10px 20px;
+  }
+  .search-dropDown-item:hover {
+  background-color: var(--kia-light-grey-background);
+  }
+  #header__search-dropDown-closed {
+   display: none;
+    
+  }
+  /* Search bar Animations -----   */
+  @keyframes searchBarOpen {
+    from {width: 150px;}
+    to {width: 360px;}
+  }
+  @keyframes searchBarClose {
+    from {width: 360px;}
+    to {width: 150px;}
+  }
+  /* Search bar Animations End-----   */
 }
