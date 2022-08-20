@@ -1081,4 +1081,23 @@ justify-content: space-between;
     to {width: 150px;}
   }
   /* Search bar Animations End-----   */
+  .main-content__left {
+    width: 74.5vw;
+   }
+   .left__header {
+    height: 70px;
+  }
+  .left__header-title {
+    font-size: 1.15rem;
+    margin-left: 40px;
+  }
+  .left__header-title-angle {
+    margin-right: 15px;
+  }
+
+
+
+  .main-content__right {
+width: 25.5vw;
+  }
 }
