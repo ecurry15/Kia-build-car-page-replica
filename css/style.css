@@ -786,8 +786,6 @@ justify-content: space-between;
   flex-direction: column;
   position: relative;
 }
-
-
 .finish-build-item {
   display: flex;
   align-items: center;
@@ -874,6 +872,9 @@ justify-content: space-between;
     margin-top: 60px;
     height: calc(100vh - 60px);
   }
+  .main-content__left {
+    width: 74vw;
+      }
   .left__header {
     height: 80px;
   }
@@ -920,5 +921,76 @@ justify-content: space-between;
   }
   .carousel__item h2 {
     margin-bottom: 5px;
+  }
+  .main-content__right {
+    width: 26vw;
+  }
+  .right__top-section {
+    height: 80px;
+  }
+  .right__clipBoard-icon {
+    font-size: 1.5rem;
+  }
+  .right__build-title {
+    font-size: .9rem;
+  }
+  .right__build-prices p {
+    font-size: 1rem;
+  }
+  .right__build-prices span {
+    font-size: .8rem;
+  }
+  .right__down-angle {
+    font-size: 1.25rem;
+  }
+  .right__main-section {
+    width: 100%;
+    margin-top: 80px;
+    background-color: var(--kia-right-light-grey-background);
+  }
+  .right__paymentAndShare {
+  padding-top: 20px;
+  width: 100%;
+  font-size: .9rem;
+  }
+  .paymentAndShare__payment {
+    font-size: .9rem;
+  }
+  .fa-calculator {
+    font-size: 1.6rem;
+  }
+  .right__share-svg {
+    margin-right: 15px;
+  }
+  .right__vehicle-nearby-section {
+    margin-top: 20px;
+  }
+  .right__features-item {
+    font-size: .8rem;
+  }
+  .right__vehicle-nearby-button {
+    font-size: .9rem;
+    border: 1px solid var(--kia-dark-background);
+    padding: 19px 0;
+    margin: 14px 0;
+  }
+  .right__contact-dealer-btn {
+    font-size: .9rem;
+    border: 1px solid var(--kia-dark-background);
+    padding: 19px 0;
+  }
+  .right__main-finish-build {
+    height: calc(100vh - 301px);
+  }
+  .finish-build-item {
+    font-size: 1rem;
+  }
+  .finish-build-item__down-angle {
+    font-size: 1rem;
+  }
+  .finish-build-button {
+    padding: 19px 0px;
+    font-size: .9rem;
+    border: 1px solid var(--kia-dark-background);
   }
 }
