@@ -827,6 +827,22 @@ justify-content: space-between;
   background-color: var(--kia-dark-background);
 }
 
+
+
+@media (max-height:800px) {
+  .left__car-container {
+    width: 100%;
+    height: 36vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: url("https://s7d2.scene7.com/is/image/kiamotors/Sedans_BnP_Asset-2x:XXL");
+    background-repeat: no-repeat;
+      background-size: 100% 81%;
+      position: relative;
+  }
+}
+
+
 @media (max-width:1700px) {
   .header {
     height: 60px;
@@ -873,7 +889,7 @@ justify-content: space-between;
     height: calc(100vh - 60px);
   }
   .main-content__left {
-    width: 74vw;
+    width: 72vw;
       }
   .left__header {
     height: 80px;
@@ -916,6 +932,9 @@ justify-content: space-between;
   .trims__label > span {
     font-size: 1rem;
   }
+  .trim__carousel {
+    width: 100%;
+  }
   .carousel__item {
     height: 79%;
   }
@@ -923,7 +942,7 @@ justify-content: space-between;
     margin-bottom: 5px;
   }
   .main-content__right {
-    width: 26vw;
+    width: 28vw;
   }
   .right__top-section {
     height: 80px;
@@ -955,9 +974,14 @@ justify-content: space-between;
   }
   .paymentAndShare__payment {
     font-size: .9rem;
+    margin-left: 20px;
   }
   .fa-calculator {
     font-size: 1.6rem;
+    margin-left: 0px;
+  }
+  .paymentAndShare__share {
+    margin-right: 20px;
   }
   .right__share-svg {
     margin-right: 15px;
