@@ -1094,6 +1094,75 @@ justify-content: space-between;
   .left__header-title-angle {
     margin-right: 15px;
   }
+  .threeSixty {
+    width: 68%;
+  }
+  .left__styling-container {
+    margin-left: 50px;
+  width: 80%;
+  }
+.styling__exterior-and-interior {
+  font-size: .95rem;
+  gap: 30px;
+}
+.styling__paint-and-seat {
+margin-right: 15px;
+}
+.styling-colors__paint {
+  gap:8px
+}
+.styling-colors__seat {
+  gap: 8px;
+}
+.paint__circle {
+  width: 30px;
+  height: 30px;
+}
+.seat-color__circle {
+  width: 30px;
+  height: 30px;
+}
+.paint-and-seat__selected-icon {
+  font-size: .7rem;
+}
+.paint-and-seat__price-availability {
+  border: 1px solid var(--kia-white-text);
+}
+.trims__label > h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .8px;
+  margin-right: 20px;
+}
+.trims__label > span {
+  font-size: .8rem;
+}
+.trim__carousel {
+  height: 105px;
+  gap: 10px;
+  margin-top: 0px;
+  overflow-x: auto;
+}
+.carousel__item {
+  width: 160px;
+}
+.carousel__item h2 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.carousel__item p {
+  font-size: .8rem;
+}
+.carousel__item span {
+  font-size: .7rem;
+}
+.carsousel__selected-item-check {
+  height: 36px;
+  width: 36px;
+}
+
+
+
 
 
 
