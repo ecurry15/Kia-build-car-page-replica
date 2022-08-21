@@ -1082,7 +1082,7 @@ justify-content: space-between;
   }
   /* Search bar Animations End-----   */
   .main-content__left {
-    width: 74.5vw;
+    width: calc(100vw - 365px);
    }
    .left__header {
     height: 70px;
@@ -1093,6 +1093,10 @@ justify-content: space-between;
   }
   .left__header-title-angle {
     margin-right: 15px;
+  }
+  .left__car-container {
+    width: 100%;
+    height: clamp(300px, 31vw, 41vh);
   }
   .threeSixty {
     width: 68%;
@@ -1161,12 +1165,74 @@ margin-right: 15px;
   width: 36px;
 }
 
-
-
-
-
-
   .main-content__right {
-width: 25.5vw;
+width: 365px;
+  }
+  .right__top-section {
+    height: 70px;
+  }
+  .right__build-title {
+    font-size: .79rem;
+  }
+  .right__build-prices p {
+    font-size: .85rem;
+  }
+  .right__build-prices span {
+    font-size: .7rem;
+  }
+  .right__down-angle {
+    font-size: 1.2rem;
+    margin-right: 20px;
+  }
+  .right__main-section {
+    margin-top: 70px;
+  }
+  .right__paymentAndShare {
+  padding-top: 12px;
+  width: 100%;
+  }
+  .paymentAndShare__payment {
+    font-size: .8rem;
+    margin-left: 30px;
+  }
+  .fa-calculator {
+    font-size: 1.6rem;
+    margin-right: 10px;
+  }
+  .paymentAndShare__share {
+    margin-right: 30px;
+    font-size: .8rem;
+  }
+  .right__share-svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .right__vehicle-nearby-section {
+    margin-top: 10px;
+  }
+  .right__vehicle-nearby-button {
+    font-size: .85rem;
+    padding: 17px 0;
+  }
+  .right__contact-dealer-btn {
+    font-size: .85rem;
+    padding: 17px 0;
+  }
+  .right__main-finish-build {
+    height: calc(100vh - 269px);
+  }
+  .finish-build-item {
+    font-size: .85rem;
+  }
+  .finish-build-button {
+    padding: 17px 0px;
+    font-size: .85rem;
+  }
+}
+@media (max-width:1170px) {
+  .left__styling-container {
+    margin-left: 50px;
+  width: 87%;
   }
 }
