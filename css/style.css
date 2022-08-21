@@ -279,6 +279,9 @@ flex-direction: column;
   justify-self: center;
   bottom: 0;
 }
+.car-container__mobile-threeSixty {
+  display: none;
+}
 .left__styling-container {
   align-self: flex-start;
   display: flex;
@@ -1354,8 +1357,21 @@ width: 365px;
        margin-top: auto;
         -webkit-user-drag: none;
       }
-
-
+.car-container__mobile-threeSixty {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: var(--kia-white-text);
+  font-weight: 600;
+  font-size: .9rem;
+  right: 55px;
+  top: 30px;
+}
+.car-container__mobile-threeSixty svg{
+  width: 30px;
+  height: 30px;
+  margin-top: -8px;
+}
 
       .left__styling-container {
         align-self: flex-start;
