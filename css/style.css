@@ -923,6 +923,27 @@ justify-content: space-between;
   .styling-colors__seat {
     gap: 10px;
   }
+  .paint-seat__description {
+    font-size: .75rem;
+  }
+  .paint-seat__description span {
+    margin-top: 5px;
+  }
+  #description__color-only {
+    z-index: 20;
+    height: 25px;
+    font-size: .75rem;
+    }
+    
+    #description__displayNone {
+      display: none;
+      height: 70px;
+      padding: 0 10px;
+      top: -80px;
+      right: -150px;
+      justify-content: center;
+      z-index: 20;
+    }
   .trims__label > h2 {
     font-size: 1.4rem;
     font-weight: 600;
