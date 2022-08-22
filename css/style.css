@@ -1263,7 +1263,7 @@ width: 365px;
   width: 87%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   body {
     overflow: visible;
   }
@@ -1393,8 +1393,67 @@ width: 365px;
       .styling-colors__seat {
         margin-right: 45px;
       }
+ .main-content__right {
+width: 100%;
+   }
+.right__top-section {
+    width: 100%;
+    height: 65px;
+   position: relative;
+  align-items: center;
+  }
+  .right__build-summary {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .right__build-title {
+    margin-bottom: 0;
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+  .right__main-section {
+    margin-top: 0px;
+  }
+  .right__paymentAndShare {
+    padding-top: 0px;
+    margin-top: 15px;
+    justify-content: unset;
+  }
+  .paymentAndShare__payment {
+    margin-right: 70px;
+    margin-left: 20px;
+  }
+  .paymentAndShare__share {
+    display: none;
+  }
+  .right__vehicle-nearby-section {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+  .right__vehicle-nearby-button {
+    display: none;
+  }
+  #right__vehicle-nearby-section-expanded {
+    margin-bottom: 15px;
+  }
+  .right__contact-dealer-btn {
+    display: none;
+  }
+  .right__main-finish-build {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+  }
+  .finish-build-button {
+    display: none;
+  }
 }
-@media (max-width:1024px) and (min-height:850px) {
+@media (max-width:1023px) and (min-height:850px) {
   .left__styling-container {
     margin-top: 510px;
   }
