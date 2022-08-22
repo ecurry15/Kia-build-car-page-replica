@@ -787,6 +787,9 @@ justify-content: space-between;
 #right__contact-dealer-btn-closed {
   display: none;
 }
+.right__mobile-contact-dealer-section {
+  display: none;
+}
 .right__main-finish-build {
   width: 94%;
   height: calc(100vh - 340px);
@@ -1484,6 +1487,68 @@ font-size: .8rem;
   #mobile-finish-build-btn {
 margin-right: 20px;
 margin-left: 10px;
+  }
+  .right__mobile-contact-dealer-section {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   padding-top: 20px;
+    width: 97%;
+    color: var(--kia-dark-background);
+    border-top: 1px solid var(--kia-underline);
+  }
+  #right__mobile-contact-dealer-section-closed {
+    display: none;
+  }
+  .mobile-contact-dealer-section__nearest {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .mobile-contact-dealer-section__nearest h1 {
+    font-size: .95rem;
+    margin-right: 15px;
+  }
+  .mobile-contact-dealer-section__nearest p {
+    font-size: .7rem;
+    margin-right: 15px;
+  }
+  .mobile-contact-dealer-section__nearest span {
+    font-weight: 500;
+    font-size: .7rem;
+    text-decoration: underline;
+  }
+  .mobile-contact-dealer-section__call-chat-quote {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-contact-dealer-section__call-chat-quote i {
+    font-size: .9rem;
+  }
+  .mobile-contact-dealer-section__call-chat-quote p {
+text-decoration: underline;
+margin-left: 10px;
+  }
+  .mobile__divider {
+    width: 2px;
+    height: 20px;
+    background-color: var(--kia-underline);
+    margin: 0px 12px;
+  }
+  .mobile__call-section {
+    display: flex;
+    align-items: center;
+  }
+  .mobile__chat-section {
+    display: flex;
+    align-items: baseline;
+  }
+  .mobile__quote-section {
+    display: flex;
+    align-items: baseline;
   }
 }
 @media (max-width:1023px) and (min-height:850px) {

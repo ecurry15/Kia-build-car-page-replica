@@ -12,6 +12,7 @@ const rightMainFinishBuild = document.querySelector('.right__main-finish-build')
 let downAngleClicked = false;
 const carContainer = document.querySelector('.car-container__car-section');
 const carSectionImg = document.querySelector('.car-section__img');
+const rightMobileContactDealerSection = document.querySelector('.right__mobile-contact-dealer-section');
 //SetUp for car 360 rotation ----
 let initialXPosition = 0;
 let mouseDownOnImg = false;
@@ -61,6 +62,7 @@ const expandBuildSection = () => {
   rightFeaturesItem.forEach(item => item.removeAttribute('id'))
   rightContactDealerBtn.removeAttribute('id');
   rightMainFinishBuild.id = "right__main-finish-build-open";
+  rightMobileContactDealerSection.removeAttribute('id');
 }
 
 const closeBuildSection = () => {
@@ -68,6 +70,7 @@ const closeBuildSection = () => {
   rightFeaturesItem.forEach(item => item.id = "right__features-item-closed");
   rightContactDealerBtn.id = "right__contact-dealer-btn-closed";
   rightMainFinishBuild.removeAttribute('id');
+  rightMobileContactDealerSection.id = "right__mobile-contact-dealer-section-closed";
 }
 
 rightDownAngle.addEventListener('click', function() {
