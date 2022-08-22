@@ -1394,3 +1394,8 @@ width: 365px;
         margin-right: 45px;
       }
 }
+@media (max-width:1024px) and (min-height:850px) {
+  .left__styling-container {
+    margin-top: 510px;
+  }
+}
