@@ -695,6 +695,12 @@ justify-content: space-between;
   cursor: pointer;
   margin-right: 15px;
 }
+.paymentAndShare__mobile-share-icons {
+  display: none;
+}
+.paymentAndShare__mobile-build-buttons {
+  display: none;
+}
 .paymentAndShare__share {
   display: flex;
   align-items: center;
@@ -1420,7 +1426,7 @@ width: 100%;
     justify-content: unset;
   }
   .paymentAndShare__payment {
-    margin-right: 70px;
+    margin-right: 65px;
     margin-left: 20px;
   }
   .paymentAndShare__share {
@@ -1451,6 +1457,33 @@ width: 100%;
   }
   .finish-build-button {
     display: none;
+  }
+  .paymentAndShare__mobile-share-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--kia-dark-background);
+    font-size: 1.31rem;
+    margin-left: 65px;
+  }
+  .paymentAndShare__mobile-share-icons a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  .paymentAndShare__mobile-build-buttons {
+    display: flex;
+padding: 15px 17px;
+background-color: var(--kia-white-text);
+border: 1px solid var(--kia-dark-background);
+font-weight: 600;
+font-size: .8rem;
+  }
+  #mobile-nearby-btn {
+    margin-left: auto;
+  }
+  #mobile-finish-build-btn {
+margin-right: 20px;
+margin-left: 10px;
   }
 }
 @media (max-width:1023px) and (min-height:850px) {
