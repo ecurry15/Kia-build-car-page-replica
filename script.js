@@ -117,7 +117,7 @@ carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/20
   }
 }
 
-carContainer.addEventListener('mousemove', function(e) {
+carContainer.addEventListener('pointermove', function(e) {
  if (mouseDownOnImg) {
 if(initialXPosition < e.pageX) {
   dragPosition = 'right';
