@@ -461,15 +461,23 @@ display: none;
 }
 #seat__black-cloth {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_black_cloth.jpg);
+  background-position: center;
+  background-size: cover;
 }
 #seat__black-and-synTex {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_black_cloth_syntex.jpg);
+  background-position: center;
+  background-size: cover;
 }
 #seat__red {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_red_syntex.jpg);
+  background-position: center;
+  background-size: cover;
 }
 #seat__black-synTex {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_black_syntex.jpg);
+  background-position: center;
+  background-size: cover;
 }
 #seat__ash-blue {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_ash_blue_syntex.jpg);
@@ -479,9 +487,12 @@ display: none;
 #seat__black-red-stitching {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/swatches/swatch_K5_2023_interior_black-with-red-accents-syntex.jpg);
   background-position: center;
+  background-size: cover;
 }
 #seat__brown {
   background-image: url(https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2022/swatches/swatch_K5_2022_chestnut_brown_syntex.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .seat-color__circle:hover #description__color-only {
   display: flex;
