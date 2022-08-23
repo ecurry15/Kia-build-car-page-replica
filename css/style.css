@@ -1384,7 +1384,6 @@ width: 365px;
   height: 30px;
   margin-top: -8px;
 }
-
       .left__styling-container {
         align-self: flex-start;
         display: flex;
@@ -1647,8 +1646,49 @@ margin-left: 10px;
     width: 96%;
   }
 }
-@media (max-width:405px) {
+@media (max-width:550px) {
   .interior {
     margin-right: 15px;
   }
+}
+@media (max-width:375px) {
+ .left__styling-container {
+   overflow-x: hidden;
+ }
+ .styling-colors__paint {
+flex-wrap: nowrap;
+overflow-x: auto;
+overflow-y: visible;
+height: 58px;
+ }
+ .paint__circle {
+  flex: 1 0 auto;
+ }
+ .right__build-prices p {
+   display: flex;
+ flex-direction: column;
+ }
+ .right__build-prices span {
+   padding-left: 0px;
+   margin: 5px 0px;
+ }
+ .right__vehicle-nearby-button {
+  width: 90%;
+}
+.finish-build-button {
+  display: block;
+  width: 90%;
+}
+.paymentAndShare__payment p {
+  white-space: pre-line;
+}
+.paymentAndShare__mobile-share-icons {
+  font-size: 1rem;
+}
+.mobile-contact-dealer-section__nearest span {
+  white-space: pre-line;
+}
+.mobile__quote-section {
+  align-items: center;
+}
 }
