@@ -221,6 +221,7 @@ background-color: var(--kia-light-grey-background);
   margin-top: 67px;
   height: calc(100vh - 67px);
 width: 100%;
+background-color: var(--kia-light-grey-background);
 }
 .main-content__left {
 width: 73vw;
@@ -1333,7 +1334,6 @@ width: 365px;
     flex-direction: column;
     margin-top: 60px;
     height: 100%;
-    overflow: scroll;
   }
   .main-content__left {
     width: 100%;
@@ -1417,6 +1417,7 @@ width: 365px;
       }
  .main-content__right {
 width: 100%;
+overflow: auto;
    }
 .right__top-section {
     width: 100%;
