@@ -3,6 +3,7 @@ const headerSearchSection = document.querySelector('.header__search-section');
 const headerSearchXIcon = document.querySelector('.header__search-x-icon');
 const headerSearchIcon = document.querySelector('.header__search-icon');
 const headerSearchDropDown = document.querySelector('.header__search-dropDown');
+const headerSearchInput = document.querySelector('.header__search-section-input');
 let searchDropDownOpen = false;
 const rightDownAngle = document.querySelector('.right__down-angle');
 const rightVehicleNearbySection = document.querySelector('.right__vehicle-nearby-section');
@@ -35,6 +36,7 @@ const closeSearchDropDown = () => {
   headerSearchXIcon.removeAttribute('id');
   headerSearchIcon.removeAttribute('id');
   headerSearchDropDown.id = "header__search-dropDown-closed";
+  headerSearchInput.value = "";
 headerSearchSection.style.animation = "searchBarClose .4s";
 searchDropDownOpen = false;
 /* Timeout so dealer section movement isn't visible */
