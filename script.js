@@ -14,12 +14,13 @@ let downAngleClicked = false;
 const carContainer = document.querySelector('.car-container__car-section');
 const carSectionImg = document.querySelector('.car-section__img');
 const rightMobileContactDealerSection = document.querySelector('.right__mobile-contact-dealer-section');
+
 //SetUp for car 360 rotation ----
 let initialXPosition = 0;
 let mouseDownOnImg = false;
 let currentImg = 1;
 let dragPosition = '';
-
+//SetUp for car 360 rotation End----
 
 const openSearchDropDown = () => {
 headerFindDealerSection.style.display = "none";
@@ -47,6 +48,7 @@ function displayDealerSection() {
 }
 
 headerSearchSection.addEventListener('click', openSearchDropDown);
+
 
 window.addEventListener('click', function(e) {
 const isSearchElement = e.target.matches('[data-search-section]');
