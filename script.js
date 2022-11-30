@@ -1,3 +1,4 @@
+
 const headerFindDealerSection = document.getElementById('header__find-dealer-section');
 const headerSearchSection = document.querySelector('.header__search-section');
 const headerSearchXIcon = document.querySelector('.header__search-x-icon');
@@ -194,3 +195,10 @@ if(initialXPosition < e.pageX) {
 changeCarImg();
  }
 })
+
+setTimeout(() => {
+  if(localStorage.getItem("firstTime")==null){
+    alert('Hi, some features were omitted to avoid excessive time. The main features are to change the car color(5 available) and its position (360 movement). Thanks for viewing!');
+    localStorage.setItem("firstTime","done");
+  }
+}, "1000");
