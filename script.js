@@ -105,7 +105,7 @@ const paintColorName = document.querySelector('.paint-color__name');
 
 
 paintColorCircles.forEach(e => {
-  e.addEventListener('click', (circle) => {
+  e.addEventListener('pointerdown', (circle) => {
     // method to add the check icon to to the selected color --//
     //1. check if selected color is already selected or is nonSelectable-
     //2. if selected color is available a div with the icon is appended to the selected color --
