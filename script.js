@@ -99,6 +99,33 @@ window.addEventListener('pointerleave', function() {
   mouseDownOnImg = false;
 })
 
+const paintColorCircles = document.querySelectorAll('.paint__circle');
+let currentCarColor = "0c0c0c";
+
+
+
+paintColorCircles.forEach(e => {
+  e.addEventListener('click', () => {
+    if (e.id === "paint__black") {
+      currentCarColor = "0c0c0c";
+      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/0c0c0c/360/01.png/jcr:content/renditions/desktop.png";
+    } else if(e.id === "paint__pearl") {
+      currentCarColor = "e3e7ee";
+      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/e3e7ee/360/01.png/jcr:content/renditions/desktop.png";
+    } else if(e.id === "paint__wolf-gray") {
+      currentCarColor = "adb4c0";
+      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/adb4c0/360/01.png/jcr:content/renditions/desktop.png";
+    } else if(e.id === "paint__red") {
+      currentCarColor = "9e212b";
+      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/9e212b/360/01.png/jcr:content/renditions/desktop.png";
+    } else if(e.id === "paint__blue") {
+      currentCarColor = "283eab";
+      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/283eab/360/01.png/jcr:content/renditions/desktop.png";
+    } 
+  })
+});
+
+
 const changeCarImg = () => {
   if(dragPosition == 'left') {
     if(currentImg < 36) { 
@@ -115,11 +142,12 @@ const changeCarImg = () => {
     }
   }
   if(currentImg < 10) {
-carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/lxs-fwd/exterior/0c0c0c/360/${"0" + currentImg}.png/jcr:content/renditions/desktop.png`
+carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/${currentCarColor}/360/${"0" + currentImg}.png/jcr:content/renditions/desktop.png`
   } else {
-    carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/lxs-fwd/exterior/0c0c0c/360/${currentImg}.png/jcr:content/renditions/desktop.png`
+    carSectionImg.src = `https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/${currentCarColor}/360/${currentImg}.png/jcr:content/renditions/desktop.png`
   }
 }
+
 
 carContainer.addEventListener('pointermove', function(e) {
  if (mouseDownOnImg) {
