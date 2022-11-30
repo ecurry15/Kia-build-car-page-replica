@@ -101,28 +101,61 @@ window.addEventListener('pointerleave', function() {
 
 const paintColorCircles = document.querySelectorAll('.paint__circle');
 let currentCarColor = "0c0c0c";
-
+const paintColorName = document.querySelector('.paint-color__name');
 
 
 paintColorCircles.forEach(e => {
-  e.addEventListener('click', () => {
-    if (e.id === "paint__black") {
-      currentCarColor = "0c0c0c";
-      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/0c0c0c/360/01.png/jcr:content/renditions/desktop.png";
-    } else if(e.id === "paint__pearl") {
-      currentCarColor = "e3e7ee";
-      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/e3e7ee/360/01.png/jcr:content/renditions/desktop.png";
-    } else if(e.id === "paint__wolf-gray") {
-      currentCarColor = "adb4c0";
-      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/adb4c0/360/01.png/jcr:content/renditions/desktop.png";
-    } else if(e.id === "paint__red") {
-      currentCarColor = "9e212b";
-      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/9e212b/360/01.png/jcr:content/renditions/desktop.png";
-    } else if(e.id === "paint__blue") {
-      currentCarColor = "283eab";
-      carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/283eab/360/01.png/jcr:content/renditions/desktop.png";
-    } 
-  })
+  e.addEventListener('click', (circle) => {
+    // method to add the check icon to to the selected color --//
+    //1. check if selected color is already selected or is nonSelectable-
+    //2. if selected color is available a div with the icon is appended to the selected color --
+    //3. finally the data-current attribute is removed from all and re-added to the selected color --
+    const isCurrent = circle.currentTarget.matches("[data-current]");
+    const isNonSelectable = circle.currentTarget.matches("[data-nonSelectable]");
+    if(!isCurrent && !isNonSelectable) {
+      paintColorCircles.forEach(paint => {
+        paint.removeAttribute('data-current')
+       });
+      circle.currentTarget.setAttribute('data-current', "");
+      let paintSelectedIcon = document.querySelectorAll('.paint-and-seat__selected-icon');
+  paintSelectedIcon.forEach(i => {
+  i.remove();
+  });
+  const span = document.createElement('span');
+  span.className = "paint-and-seat__selected-icon";
+  span.id = "selected-icon-active";
+  const divIcon = document.createElement('i');
+  divIcon.classList = "fa-solid fa-check";
+  span.appendChild(divIcon);
+  const newdiv = circle.path[0];
+  newdiv.appendChild(span);
+   // method to add the check icon to to the selected color  End--//
+
+//changeCarImg color ---
+      if (e.id === "paint__black") {
+        currentCarColor = "0c0c0c";
+        paintColorName.textContent = "Ebony Black";
+        carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/0c0c0c/360/01.png/jcr:content/renditions/desktop.png";
+      } else if(e.id === "paint__pearl") {
+        currentCarColor = "e3e7ee";
+        paintColorName.textContent = "Glacial White Pearl";
+        carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/e3e7ee/360/01.png/jcr:content/renditions/desktop.png";
+      } else if(e.id === "paint__wolf-gray") {
+        currentCarColor = "adb4c0";
+        paintColorName.textContent = "Wolf Gray";
+        carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/adb4c0/360/01.png/jcr:content/renditions/desktop.png";
+      } else if(e.id === "paint__red") {
+        currentCarColor = "9e212b";
+        paintColorName.textContent = "Passion Red Tint Coat";
+        carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/9e212b/360/01.png/jcr:content/renditions/desktop.png";
+      } else if(e.id === "paint__blue") {
+        currentCarColor = "283eab";
+        paintColorName.textContent = "Sapphire Blue";
+        carSectionImg.src = "https://www.kia.com/us/content/dam/kia/us/en/vehicles/k5/2023/trims/gt/exterior/283eab/360/01.png/jcr:content/renditions/desktop.png";
+      } 
+    }
+  
+  });
 });
 
 

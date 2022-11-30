@@ -113,7 +113,7 @@
         <div class="styling__paint-and-seat">
           <p>
             Paint:
-            <span>Ebony Black</span>
+            <span class="paint-color__name">Ebony Black</span>
           </p>
           <p>
             Interior:
@@ -122,17 +122,17 @@
         </div>
         <div class="styling__colors">
           <div class="styling-colors__paint">
-            <div class="paint__circle" id="paint__black">
+            <div class="paint__circle" id="paint__black" data-current>
               <div class="paint-seat__description" id="description__color-only">
                 Ebony Black
               </div>
               <div>
               </div>
-              <div class="paint-and-seat__selected-icon">
+              <span class="paint-and-seat__selected-icon" id="selected-icon-active">
                 <i class="fa-solid fa-check"></i>
-              </div>
+              </span>
             </div>
-            <div class="paint__circle" id="paint__silver">
+            <div class="paint__circle" id="paint__silver" data-nonSelectable>
               <div class="paint-seat__description" id="description__displayNone">
                 Everlasting Silver
                 <span>Available in LXS FWD and EX</span>
@@ -148,6 +148,9 @@
               <div class="paint-and-seat__price-availability"> 
                 <i class="fa-solid fa-dollar-sign"></i>
               </div>
+              <div class="paint-and-seat__selected-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
             </div>
             <div class="paint__circle" id="paint__wolf-gray">
               <div class="paint-seat__description" id="description__displayNone">
@@ -156,8 +159,11 @@
               <div class="paint-and-seat__price-availability"> 
                 <i class="fa-solid fa-dollar-sign"></i>
               </div>
+              <div class="paint-and-seat__selected-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
             </div>
-            <div class="paint__circle" id="paint__gravity-gray">
+            <div class="paint__circle" id="paint__gravity-gray" data-nonSelectable>
               <div class="paint-seat__description" id="description__displayNone">
                 Gravity Gray
                 <span>Available in LXS FWD and EX</span>
@@ -173,12 +179,18 @@
               <div class="paint-and-seat__price-availability"> 
                 <i class="fa-solid fa-dollar-sign"></i>                
               </div>
+              <div class="paint-and-seat__selected-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
             </div>
             <div class="paint__circle" id="paint__blue">
               <div class="paint-seat__description" id="description__color-only">
                 Sapphire Blue
               </div>
               <div>                
+              </div>
+              <div class="paint-and-seat__selected-icon">
+                <i class="fa-solid fa-check"></i>
               </div>
             </div>
           </div>

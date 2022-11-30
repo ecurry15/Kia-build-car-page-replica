@@ -442,6 +442,10 @@ display: none;
 .paint-and-seat__selected-icon {
   position: absolute;
   color: var(--kia-white-text);
+  display: none;
+}
+#selected-icon-active {
+  display: block;
 }
 .styling-colors__seat {
   display: flex;
