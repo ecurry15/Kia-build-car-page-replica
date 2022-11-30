@@ -127,7 +127,7 @@ paintColorCircles.forEach(e => {
   const divIcon = document.createElement('i');
   divIcon.classList = "fa-solid fa-check";
   span.appendChild(divIcon);
-  const newdiv = circle.path[0];
+  const newdiv = circle.currentTarget;
   newdiv.appendChild(span);
    // method to add the check icon to to the selected color  End--//
 
